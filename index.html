@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <!-- الheader -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/travel.webp"
+            alt="Avatar Logo"
+            style="width: 50px"
+            class="rounded-pill mx-2"
+          />
+        </a>
+
+        <a
+          class="navbar-brand text-capitalize fw-bold fs-3 text-success"
+          style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);"
+          href="#"
+          >travel</a>
+        <div class="vr" style="height: 45px; margin-top: 9px"></div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold text-success"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                style="border: 2px solid rgba(15, 100, 4, 0.783)"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Trips
+              </button>
+              <ul class="dropdown-menu text-uppercase">
+                <li>
+                  <a class="dropdown-item text-success" href="#">Egypt</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">Lebanon</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">Korea</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">Germany</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">France</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">Britain</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-success" href="#">More...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-success mx-3" type="submit">Search</button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-success btn-login"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+     <!-- زرار login -->
+    <div
+      class="modal fade model-login"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div div class="modal-content">
+          <div class="modal-header text-bg-success">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              style="background-color: rgba(25, 205, 25, 0.788)"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="inputEmail4" class="form-label text-success fw-bold"
+                >Email address</label
+              >
+              <input type="email" class="form-control" id="inputEmail4" />
+              <span>We'll never share your email with anyone else</span>
+            </div>
+            <div class="mb-3">
+              <label
+                for="inputPassword4"
+                class="form-label text-success fw-bold"
+                >Password</label
+              >
+              <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="form-check form-switch mx-4">
+              <input
+                class="form-check-input bg-success"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexSwitchCheckChecked">
+                Remmember me</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success me-auto">Login</button>
+            <button
+              type="button" class="btn btn-success" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الشاشة الرئيسية -->
+    <div id="carouselExampleCaptions" class="carousel slide fixed-indicators" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner" >
+        <div class="carousel-item d-block active" >
+          <img src="images/tour forest.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption mb-4" style="background-color: rgba(9, 71, 9, 0.415); border-radius: 15px;">
+            <h5 class="text-uppercase">forest tourism</h5>
+            <p>Forests, along with the wildlife that live there, are important to tourism.</p>
+            <button class="btn btn-success" type="submit">Visit Us</button>
+          </div>
+          <div class="carousel-indicators row">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active mb-4" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tourism6.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block mb-4 " style="background-color: rgba(9, 71, 9, 0.415); border-radius: 15px;">
+            <h5 class="text-uppercase">Archaeological tourism</h5>
+            <p>Is aims to promote public interest in archaeology while conserving historical sites.</p>
+            <button class="btn btn-success" type="submit">Visit Us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tourism argentina.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block mb-4" style="background-color: rgba(9, 71, 9, 0.415); border-radius: 15px;">
+            <h5 class="text-uppercase">Mountain tourism</h5>
+            <p>Mountain tourism refers to tourism that occurs in specific geographical areas.</p>
+            <button class="btn btn-success" type="submit">Visit Us</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/egypt-tour.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-block mb-4" style="background-color: rgba(9, 71, 9, 0.415); border-radius: 15px;">
+            <h5 class="text-uppercase">Nautical tourism</h5>
+            <p>Is tourism that combines sailing and boating with vacation and holiday activitie.</p>
+            <button class="btn btn-success" type="submit">Visit Us</button>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- هلشان اجيب الايكونات علي اليمين كده حطيتها في ناف واديتها right:0 و top:0 -->
+     <!-- وطبعا اديتها ارتفاع الصفحة  -->
+      <!-- ال icons -->
+<nav class="navbar navbar-expand-lg navbar-light position-fixed" style="right: 0; top: 0; height: 100vh; z-index:9;">
+  <div class="container-fluid flex-column">
+    <div class=" navbar-collapse mt-5 me-4 icon" id="navbarNav">
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item my-3 d-sm-block">
+          <a href="#" ><i class="fa-brands fa-square-facebook fs-1 text-success" ></i></a>
+        </li>
+        <li class="nav-item ">
+          <a href="#"><i class="fa-brands fa-square-whatsapp fs-1 text-success"></i></a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#"><i class="fa-brands fa-square-twitter fs-1 text-success"></i></a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#"><i class="fa-brands fa-linkedin fs-1 text-success"></i></a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#"><i class="fa-brands fa-square-instagram fs-1 text-success"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+<div class="container-fluid welcome" style="background-color:rgba(13, 78, 7, 0.476); border-radius: 5px;">
+  <h3 class="text-success pt-4" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">Welcome to the World of Travel!</h3>
+  <p class="text-light">We are thrilled to have you here! Explore breathtaking destinations, 
+    indulge in unforgettable experiences, and discover new cultures from around the globe. 
+    Whether you're seeking thrilling adventures, relaxing beach getaways,
+    or delving into historical landmarks, we're here to assist you every step of the way.
+  </p>
+  <button type="button" class="btn btn-light me-auto mb-4 text-success">Learn More</button>
+</div>
+<hr>
+<div class="container-fluid welcome" style="background-color:rgba(13, 78, 7, 0.659); border-radius: 5px;">
+  <h2 class="text-light pt-5 pb-5 text-center" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">Popular Destinations in World</h2>
+</div>
+
+<!-- اللي بيرنزل لتحت -->
+<div class="accordion mt-3" id="accordionExample">
+  <div class="accordion-item mb-1" style="box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.434);">
+    <h2 class="accordion-header">
+      <button class="accordion-button text-success text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Egypt
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tourism in Egypt ,</strong> is famous for being the home of ancient civilization, its art, and its temples. It is also a distinctive destination among lovers of enjoying the picturesque beaches.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-1" style="box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.434);">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed text-success text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Lebanon
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tourism in Lebanon ,</strong> is one of the most beautiful tourist destinations in the Middle East. It offers a unique blend of weather, history and nature in a small area, making it an ideal place to spend your holidays.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-1" style="box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.434);">
+    <h2 class="accordion-header ">
+      <button class="accordion-button collapsed text-success text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Tunisia
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tourism in Tunisia , </strong> The land of beauty, ancient history, and charming beaches! Enjoy the sun and sea in Tunisia, where the stunning nature and archaeological landmarks are located.
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- اللي فيه زرار الكوبي -->
+<div class="container-fluid welcome" style="background-color:rgba(13, 78, 7, 0.659); border-radius: 5px;">
+  <h2 class="text-light pt-3 pb-3 text-center text-capitalize">translate from english to arabic</h2>
+</div>
+
+<div class="container-fluid Write ps-4" style="background-color:rgba(13, 78, 7, 0.476); border-radius: 5px;">
+  <p class="text-light fs-5 pt-4">Write and translate <strong>Press Here</strong>
+  </p>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" id="copyContainer" data-bs-trigger="hover focus" data-bs-content="Copy here">
+    <button class="btn btn-light text-success mb-2" id="copyButton" style="opacity: 1;" type="button" >Copy</button>
+  </span>
+  <input type="text" id="floatingInput" placeholder="translate">
+</div>
+<hr>
+
+<div class="container-fluid welcome" style="background-color:rgba(13, 78, 7, 0.659); border-radius: 5px;">
+  <h2 class="text-light pt-3 pb-3 text-center text-capitalize">translate from french to arabic</h2>
+</div>
+<div class="container-fluid Write ps-4" style="background-color:rgba(13, 78, 7, 0.476); border-radius: 5px;">
+  <p class="text-light fs-5 pt-4">Write and translate <strong>Press Here</strong>
+  </p>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" id="copyContainer" data-bs-trigger="hover focus" data-bs-content="Copy here">
+    <button class="btn btn-light text-success mb-2" id="copyButton2" style="opacity: 1;" type="button" >Copy</button>
+  </span>
+  <input type="text" id="floatingInput" placeholder="translate">
+</div>
+<hr>
+
+<div class="container-fluid welcome" style="background-color:rgba(13, 78, 7, 0.659); border-radius: 5px;">
+  <h2 class="text-light pt-3 pb-3 text-center text-capitalize">translate from german to arabic</h2>
+</div>
+<div class="container-fluid Write ps-4" style="background-color:rgba(13, 78, 7, 0.476); border-radius: 5px;">
+  <p class="text-light fs-5 pt-4">Write and translate <strong>Press Here</strong>
+  </p>
+  <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" id="copyContainer" data-bs-trigger="hover focus" data-bs-content="Copy here">
+    <button class="btn btn-light text-success mb-2" id="copyButton3" style="opacity: 1;" type="button" >Copy</button>
+  </span>
+  <input type="text" id="floatingInput" placeholder="translate">
+</div>
+<hr>
+
+<!-- الصورة بالعنوان اللي تحتها -->
+<div class="container-fluid photo">
+</div>
+<div class="container-fluid welcome" style="background-color:rgba(29, 122, 20, 0.486); border-radius: 5px;">
+  <h2 class="text-success pt-3 pb-3 text-center text-uppercase" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">The greatness of engineering and the beacon of the past</h2>
+</div>
+
+<!-- the cards -->
+<div class="container mt-5">
+  <div class="row gx-4">
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex  mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/palestine.jpg" class="card-img-top h-75" alt="...">
+        <div class=" d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">palestine</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">The beating heart of Jerusalem.</p>
+      </div>
+    </div><!-- card 1 -->
+  
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tourism korea.jpg" class="card-img-top h-75" alt="...">
+        <div class="d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">korea</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">Life is colored by flowers,Worth discovering.</p>
+      </div>
+    </div><!-- card 2 -->
+  
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tourism3.jpg" class="card-img-top h-75" alt="...">
+        <div class="d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">japan</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">Home of unique rituals and high art.</p>
+      </div>
+    </div><!-- card 3 -->
+      
+
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tourism2.jpg" class="card-img-top h-75" alt="...">
+        <div class=" d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">egypt</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">Gateway to history and ancient civilization.</p>
+      </div>
+    </div><!-- card 4 -->
+  
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tunisia.jpg" class="card-img-top h-75" alt="...">
+        <div class="d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">tunisia</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">tunisia, the Pearl of the Mediterranean.</p>
+      </div>
+    </div><!-- card 5 -->
+    
+    <div class="card-div col-12 col-sm-6 col-md-6 col-lg-4 d-flex mt-5">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tourism france.jpg" class="card-img-top h-75" alt="...">
+        <div class="d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">france</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">From the Eiffel Tower to the Palaces of the Loire.</p>
+      </div>
+    </div><!-- card 6 -->
+
+    <div class="row justify-content-center gx-5">
+      <div class="card-div col-12 col-sm-6 col-md-4 col-lg-4 d-flex mt-5  ">
+      <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+        <img src="images/tourism4.jpg" class="card-img-top h-75" alt="...">
+        <div class="d-flex mt-3">
+          <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">union</h5>
+          <a href="#" class="btn btn-success ms-auto">Know More</a>
+        </div>
+        <p class="card-text mt-2">Land of legends and eternal beauty.</p>
+      </div>
+      </div><!-- card 7 -->
+      
+      <div class="card-div col-12 col-sm-6 col-md-4 col-lg-4 d-flex mt-5">
+        <div class="card card1 pe-2 ps-2 pb-2" style="width: 20rem; height: 31rem; box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+          <img src="images/tourism7.jpg" class="card-img-top h-75" alt="...">
+          <div class="d-flex mt-3">
+            <h5 class="card-title text-uppercase fw-bold " style="text-shadow: 1px 1px 2px rgba(80, 201, 24, 0.885);">nepal</h5>
+            <a href="#" class="btn btn-success ms-auto">Know More</a>
+          </div>
+          <p class="card-text mt-2">Nepal offers a wonderful blend of culture and nature.</p>
+        </div>
+      </div><!-- card 8 -->
+    </div>
+    
+  </div>
+</div>
+
+<!-- الصورة الثابتة التانية  -->
+<div class="container-fluid photo2 mt-5">
+</div>
+<hr>
+<div class="container-fluid welcome" style="background-color:rgba(15, 78, 10, 0.713); border-radius: 5px;">
+  <h2 class="text-light pt-4 pb-4 text-center text-uppercase" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">enjoy our website</h2>
+</div>
+
+<!-- الديف اللي فيها اشخاص -->
+<div class="container mt-5">
+  <div class="row justify-content-center row-gap-4 column-gap-4">
+
+    <div class="person col-7 col-sm-6 col-md-4 col-lg-3" style="background-image: url(../images/man2.jpg); box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+      <div class="person-overlay">
+      </div>
+      <div class="text-light " style="z-index: 12; position: relative;">
+        <span class="pt-3 text-capitalize" style="position: absolute;">
+          <strong>all thanks for the effort</strong>
+          <br>
+          <i class="fa-regular fa-clock"></i>
+          october 15/2020
+        </span>
+        <div class="contect mt-5" style="position:absolute; padding-top:90px">
+          <div class="amage" >
+            <img src="images/man2.jpg" class="rounded-circle mt-5"  alt="" width="100" height="130">
+          </div>
+          <span class="text-capitalize">
+            <strong>eng.william lucas</strong>
+            <br>
+            director of innovation</span>
+        </div>
+      </div>
+    </div><!-- person 1 -->
+    
+    <div class="person col-7 col-sm-6 col-md-4 col-lg-3 " style="background-image: url(../images/man3.jpg); box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+      <div class="person-overlay">
+      </div>
+      <div class="text-light" style="z-index: 12; position:relative;">
+        <span class="pt-3 text-capitalize" style="position: absolute;">
+          <strong>all thanks for the effort</strong>
+          <br>
+          <i class="fa-regular fa-clock"></i>
+          may 20/2018
+        </span>
+        <div class="contect mt-5" style="position:absolute; padding-top:90px">
+          <div class="amage">
+            <img src="images/man3.jpg" class="rounded-circle mt-5" width="100" height="130">
+          </div>
+          <span class="text-capitalize">
+            <strong>eng.oliver james</strong>
+            <br>
+            director of developing</span>
+        </div>
+      </div>
+    </div><!-- person 2 -->
+
+    <div class="person col-7 col-sm-6 col-md-4 col-lg-3 " style="background-image: url(../images/man.jpg); box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373);">
+      <div class="person-overlay">
+      </div>
+      <div class=" text-light" style="z-index: 12; position:relative;">
+        <span class="pt-3 text-capitalize" style="position: absolute;">
+          <strong>all thanks for the effort</strong>
+          <br>
+          <i class="fa-regular fa-clock"></i>
+          march 10/2023
+        </span>
+        <div class="contect mt-5" style="position:absolute; padding-top:90px">
+          <div class="amage">
+            <img src="images/man.jpg" class="rounded-circle mt-5" alt="" width="100" height="130">
+          </div>
+          <span class="text-capitalize">
+            <strong>eng.Mohammed omar</strong>
+            <br>
+            director of engineering</span>
+        </div>
+      </div>
+    </div><!-- person 3 -->
+
+  </div>    
+</div>
+
+<div class="mt-4 pt-5 text-success ms-3 fw-bold">Thanks All _ _ _</div>
+<hr>
+<div class="container text-center mt-4">
+  <h2 class="text-uppercase text-success" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">tourism news</h2>
+</div>
+<!-- الcard الكبيرة 1 -->
+<div class="container news-card">
+  <div class="col-12 " style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px;">
+    <div class="card mb-3 mt-4" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.168);">
+      <div class="row g-0 flex-column flex-md-row ">
+        <div class="col-md-4 order-md-2">
+          <img src="images/taj-mahal.jpg" class="img-fluid rounded-start custom-image"  style="border-radius: 8px;" alt="...">
+        </div>
+        <div class="col-md-8 order-md-1">
+          <div class="card-body">
+             <h2 class="card-title text-capitalize text-success" style="text-shadow: 1px 1px 2px rgba(189, 201, 24, 0.885);">taj-mahal</h2>
+            
+            <span>
+                <i class="fa-regular fa-calendar-days text-success"></i>
+                Mon, May 25th 2020
+                  <div class="progress-bar mt-1 overflow-visible text-dark bg-success" style="width: 80px; height:3px; border-radius: 5px;"></div>
+            </span>
+            
+            <p class="card-text pt-2 pb-5">There are few sights in the world as iconic as the Taj Mahal, 
+              which is a must-see on most India itineraries, particularly for travelers on the famous Golden Triangle circuit,
+              linking Delhi, Agra, and Jaipur. A testament to the power of an emperor’s love,
+              this astonishingly beautiful mausoleum was named after Mumtaz Mahal, who was the favorite wife of Shah Jahan.</p>
+            
+            <div class="mt-4 pb-4">
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bookmark"></i>
+                Prodcast</button>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bell"></i>
+                55 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm play"><i class="fa-solid fa-play"></i>
+                Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- الcard الكبيرة 2 -->
+<div class="container news-card">
+  <div class="col-12 " style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px;">
+    <div class="card mb-3 mt-4" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.168);">
+      <div class="row g-0 flex-column flex-md-row ">
+        <div class="col-md-4 order-md-1">
+          <img src="images/colosseum.jpg" class="img-fluid rounded-start custom-image custom-image2"  style="border-radius: 8px;" alt="...">
+        </div>
+        <div class="col-md-8 order-md-2">
+          <div class="card-body">
+             <h2 class="card-title text-capitalize text-success" style="text-shadow: 1px 1px 2px rgba(189, 201, 24, 0.885);">Flavian Amphitheater</h2>
+            
+            <span>
+                <i class="fa-regular fa-calendar-days text-success"></i>
+                Mon, May 25th 2020
+                  <div class="progress-bar mt-1 overflow-visible text-dark" style="background-color: rgba(255, 68, 0, 0.651); width: 80px; height:3px; border-radius: 5px;"></div>
+            </span>
+            
+            <p class="card-text pt-2 pb-5">The Flavian Amphitheater, better known to the world as the Colosseum, 
+              is the most universally recognized icon in Rome. 
+              You can explore this popular tourist attraction on your own or take a guided tour for more information 
+              and the opportunity to ask questions as you go along.</p>
+            <div class="mt-4 pb-4">
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bookmark"></i>
+                Prodcast</button>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bell"></i>
+                55 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm play2"><i class="fa-solid fa-play"></i>
+                Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- الcard الكبيرة 3 -->
+<div class="container news-card">
+  <div class="col-12 " style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px;">
+    <div class="card mb-3 mt-4" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.168);">
+      <div class="row g-0 flex-column flex-md-row ">
+        <div class="col-md-4 order-md-2">
+          <img src="images/pamukkale.jpg" class="img-fluid rounded-start custom-image"  style="border-radius: 8px;" alt="...">
+        </div>
+        <div class="col-md-8 order-md-1">
+          <div class="card-body">
+             <h2 class="card-title text-capitalize text-success" style="text-shadow: 1px 1px 2px rgba(189, 201, 24, 0.885);">Pamukkale</h2>
+            
+            <span>
+                <i class="fa-regular fa-calendar-days text-success"></i>
+                Mon, May 25th 2020
+                  <div class="progress-bar mt-1 overflow-visible text-dark bg-primary" style="width: 80px; height:3px; border-radius: 5px;"></div>
+            </span>
+            
+            <p class="card-text pt-2 pb-5">Pamukkale, meaning “cotton castle” in Turkish, 
+              is an unreal landscape in western Turkey, famous for its white terraces and. 
+              The terraces are made of travertine,a sedimentary rock deposited by water with a very high mineral content.</p>
+            
+            <div class="mt-4 pb-4">
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bookmark"></i>
+                Prodcast</button>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bell"></i>
+                55 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm play3"><i class="fa-solid fa-play"></i>
+                Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- الcard الكبيرة 4 -->
+<div class="container news-card">
+  <div class="col-12 " style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px;">
+    <div class="card mb-3 mt-4" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.168);">
+      <div class="row g-0 flex-column flex-md-row ">
+        <div class="col-md-4 order-md-1">
+          <img src="images/colosseum.jpg" class="img-fluid rounded-start custom-image custom-image2"  style="border-radius: 8px;" alt="...">
+        </div>
+        <div class="col-md-8 order-md-2">
+          <div class="card-body">
+             <h2 class="card-title text-capitalize text-success" style="text-shadow: 1px 1px 2px rgba(189, 201, 24, 0.885);">Flavian Amphitheater</h2>
+            
+            <span>
+                <i class="fa-regular fa-calendar-days text-success"></i>
+                Mon, May 25th 2020
+                  <div class="progress-bar mt-1 overflow-visible text-dark bg-info" style="background-color: rgba(255, 68, 0, 0.651); width: 80px; height:3px; border-radius: 5px;"></div>
+            </span>
+            
+            <p class="card-text pt-2 pb-5">The Flavian Amphitheater, better known to the world as the Colosseum, 
+              is the most universally recognized icon in Rome. 
+              You can explore this popular tourist attraction on your own or take a guided tour for more information 
+              and the opportunity to ask questions as you go along.</p>
+            <div class="mt-4 pb-4">
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bookmark"></i>
+                Prodcast</button>
+              <button type="button" class="btn btn-secondary btn-sm"><i class="fa-solid fa-bell"></i>
+                55 mins</button>
+                <button type="button" class="btn btn-secondary btn-sm play4"><i class="fa-solid fa-play"></i>
+                Play Episode</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- tourism news -->
+<div class="container text-center mt-5">
+  <h2 class="text-uppercase text-success" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">tourism news</h2>
+</div>
+
+<!-- الاربع كاردات بتوع السوشيال -->
+<div class="container text-center mt-4">
+  <div class="row justify-content-center g-3">
+    <div class="col-7 col-md-6 col-lg-3" >
+      <div class="card card2" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px; overflow:hidden;">
+        <h4 class="pt-4 text-success" style="text-shadow: 1px 1px 3px rgba(176, 172, 41, 0.826);">Subscribe Now</h4>
+        <div class="card-body" style="width: 100%; ">
+          <img src="images/teitter2.jpg" alt="" class="w-25" style="border-radius: 10px;">
+        </div>
+        <h5 class="pb-4 text-success">Go to the Link</h5>
+      </div>
+    </div>
+    
+    <div class="col-7 col-md-6 col-lg-3" >
+      <div class="card card2" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px; overflow:hidden;">
+        <h4 class="pt-4 text-success" style="text-shadow: 1px 1px 3px rgba(176, 172, 41, 0.826);">Join The Group</h4>
+        <div class="card-body" style="width: 100%; ">
+          <img src="images/whats.jpg" alt="" class="w-25" style="border-radius: 10px;">
+        </div>
+        <h5 class="pb-4 text-success">Go to the Link</h5>
+      </div>
+    </div>
+
+    <div class="col-7 col-md-6 col-lg-3" >
+      <div class="card card2" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px; overflow:hidden;">
+        <h4 class="pt-4 text-success" style="text-shadow: 1px 1px 3px rgba(176, 172, 41, 0.826);">Link The Page</h4>
+        <div class="card-body" style="width: 100%; ">
+          <img src="images/linked.jpg" alt="" class="w-25" style="border-radius: 10px;">
+        </div>
+        <h5 class="pb-4 text-success">Go to the Link</h5>
+      </div>
+    </div>
+
+    <div class="col-7 col-md-6 col-lg-3" >
+      <div class="card card2" style="box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.373); border-radius: 10px; overflow:hidden;">
+        <h4 class="pt-4 text-success" style="text-shadow: 1px 1px 3px rgba(176, 172, 41, 0.826);">Watch Vedios</h4>
+        <div class="card-body" style="width: 100%; ">
+          <img src="images/insta.jpg" alt="" class="w-25" style="border-radius: 10px;">
+        </div>
+        <h5 class="pb-4 text-success">Go to the Link</h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid mt-3 mb-0" style="background-color: rgba(22, 97, 22, 0.518);">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-12 col-lg-4 text-center text-light">
+      <hr>
+      <img src="images/travel.webp" class="rounded-circle" alt="" width="70" style="box-shadow: 1px 1px 5px 3px white;">
+      <span class=" fs-4 ps-2 text-capitalize">good company</span>
+      <hr>
+      <h5><a href="#" class="text-decoration-none text-light pt-4">Tol 000-000-000</a></h5>
+      <h5><a href="#" class="text-decoration-none text-light lh-lg">Address EGYPT</a></h5>
+      <h5><a href="#" class="text-decoration-none text-light pb-5">Fax 000-000-000</a></h5>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4 text-center text-light">
+      <hr>
+      <img src="images/travel.webp" class="rounded-circle" alt="" width="70" style="box-shadow: 1px 1px 5px 3px white;">
+      <span class=" fs-4 ps-2 text-capitalize ">important links</span>
+      <hr>
+      <h5 class="h5-hover"><a href="#" class="text-decoration-none text-dark pt-4">Visit Us</a></h5>
+      <h5 class="h5-hover"><a href="#" class="text-decoration-none text-dark lh-lg">Take alook</a></h5>
+      <h5 class="h5-hover"><a href="#" class="text-decoration-none text-dark pb-5">Your health is more important</a></h5>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4 text-center text-light">
+      <hr>
+      <img src="images/travel.webp" class="rounded-circle" alt="" width="70" style="box-shadow: 1px 1px 5px 3px white;">
+      <span class=" fs-4 ps-2 text-capitalize">vision</span>
+      <hr>
+      <h5><a href="#" class="text-decoration-none text-light pt-4">Serveices fol all</a></h5>
+      <h5><a href="#" class="text-decoration-none text-light lh-lg">Provide best Serveices</a></h5>
+      <h5><a href="#" class="text-decoration-none text-light pb-5">You will be better than before</a></h5>
+    </div>
+    
+  </div>
+  <hr class="text-light pt-2">
+  <h5 class="text-uppercase text-center text-success fw-bold" style="text-shadow: 1px 1px 4px rgba(80, 201, 24, 0.885);">copyright @ 2024 amlyasserothman. all my best wishes</h5>
+  <hr class="text-light pb-5">
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
